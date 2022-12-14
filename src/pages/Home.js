@@ -20,7 +20,11 @@ const Home = () => {
     // 참 : 데이터 도착 전
     // 거짓 : 데이터 도착 후 혹은 에러 발생시
     if(loading){
-        return <ClipLoader color="#f00" loading={loading} size={150} />;
+        return (
+            <div className='basic-loading'>
+                <ClipLoader color="#f00" loading={loading} size={120} />
+            </div>
+        )
     }
 
     return (

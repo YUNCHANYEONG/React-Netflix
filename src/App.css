@@ -1,8 +1,15 @@
 * {
   color: white;
 }
-.basic{
+.basic {
   background-color: black;
+}
+.basic-loading {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bottom-area{
   height: 50px;
