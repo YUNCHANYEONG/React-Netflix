@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.basic{
+  background-color: black;
+}
+.bottom-area{
+  height: 50px;
+}
+.slide-wrapper{
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basic > .slide-wrapper > h3 {
+  height: 60px;
+  margin-left: 5px;
+  display: flex;
+  align-items: end;
+  padding-bottom: 3px;
+}
+.nav-item{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.nav-item:hover {
+  color: red;
+}
+.banner {
+  height:600px;
+  display: flex;
+  align-items: center;
+}
+
+.banner::before{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  content:'';
+  background: linear-gradient(to right, black, transparent);
+}
+
+.banner-info {
+  width: 40%;
+  margin-left: 60px;
+  color: white;
+  z-index: 1;
+}
+.movieCard {
+  width: 280px;
+  height: 190px;
+  color: white;
+}
+.overlay {
+  opacity: 0;
+}
+
+.overlay > h1{
+  padding: 10px;
+}
+
+.overlay span{
+  padding: 10px;
+}
+
+.movieCard:hover .overlay {
+  opacity: 1;
+  background: rgba(43,41,41,0.9);
+  width: 100%;
+  height :100%;
+}
+
+.badge {
+  margin: 0px 3px;
 }
